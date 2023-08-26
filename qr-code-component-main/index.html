@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Pacifico&display=swap" rel="stylesheet">
   <style>
-  body {
+  body{
   background-color: lightgrey;
   display: flex;
   justify-content: center; /* Horizontal centering */
@@ -24,30 +24,45 @@
   font-size: 15px;
   font-weight: 400;
   word-spacing: 5px;
-  
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+.container{
+  max-width: 360px;
+  margin: 0 auto;
 
+}
+*{
+  margin: 0;
+  padding: 0;
+}
 .box{
   background-color:white;
   display: flex;
   justify-content: center;
   width: 270px;
   height: 450px; 
-  border-radius: 10px;
-  
-  
-  
+  border-radius: 10px; 
+  margin: 0 1em; 
 }
 .box img{
   margin-top: 10px;
   border-radius: 10px;
   margin-left: 10px;
+  margin-right: 10px;
+  
+  
 }
 h3,p{
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 20px;
   
+}
+p{
+  color: hsl(218, 44%, 22%);
+  padding-bottom: 20px;
+  font-size: 12px;
 }
 
    
@@ -55,14 +70,13 @@ h3,p{
   
 </head>
 <body>
-
-    <div class="box">
+<div class="container">
+  <div class="box">
       <div><img src="./images/image-qr-code.png" height="270px" width="252px" alt="qrcode" >
         <h3>Improve your Front-end<br> skills by building Projects</h3>
         <p>Scan the QR code to visit Front-end Mentor and take your coding skills next level</p>
-      </div>
-      
+      </div> 
     </div>
-  
+  </div>
 </body>
 </html>
